@@ -29,33 +29,32 @@
 
 # DELIVERABLES
   * Gallery
-    * #initialize an institution is initialized with a name and a kind (e.g., gym, salon, etc.)
-    * an institution cannot change its name, but can change its kind
-    * Institution.all returns all instances of the institution class
-    * #memberships returns an array of all the membership instances that belong_to an institution
-    * #members return an array of all the members that are associated with an institution
-    * #member names return an array of just the names of said members (First and Last), not the full object
+    * #initialize a gallery is initialized with a name and a neighborhood in NYC
+    * a gallery cannot change its name, but can change its neighborhood
+    * Gallery.all returns all instances of the gallery class
+    * #paintings returns an array of all the painting instances that belong_to a gallery
+    * #painters return an array of all the painters that are associated with a gallery
+    * #painter_names return an array of just the names of said painters (First and Last), not the full object
     ====== BONUS ======
-    * Institution.find_by_kind takes in a kind (e.g., "gym") as an argument and finds an institution by a given kind
-    * #upgrade_membership takes in a membership and a new tier ("free" => "premium") and changes the membership's tier
+    * Gallery.find_by_neighborhood takes in a neighborhood (e.g., "gym") as an argument and finds a gallery by a given neighborhood
+    * #change_neighborhood takes in a gallery and a new neighborhood and changes the gallery's neighborhood
 
 ==============================================================
-  * MEMBER
-    * #initialize a member is initialized with a first_name and last_name
-    * a member cannot change their name
-    * Member.all returns all instances of the member class
-    * #member_name converts a member's first and last name to member_name (e.g., "John Smith => "jsmith")
-    * #memberships returns an array of all the memberships associated with an instance of member
-    * #buy_membership creates a new membership instance taking in an institution and a tier (e.g., 
-free", "premium")
+  * PAINTER
+    * #initialize a painter is initialized with a first_name, last_name, and style
+    * a painter cannot change their name
+    * Painter.all returns all instances of the painter class
+    * #painter_name converts a member's first_name,last_name, and style to bio sentence (e.g., "John Smith", "expressionist => "John Smith is an Expressionist.")
+    * #paintings returns an array of all the paintings associated with an instance of painter
+    * #new_painting creates a new painting instance taking in an gallery and a title
     ====== BONUS ======
-    * Member.find_by_name takes in member_name (e.g., "jsmith", not "John Smith") as an argument and finds a member's full name by a member_name
-    * #find_institution finds an institution by kind (e.g., "gym", "salon") -- utilizing the Institution.find_by_kind class method
+    * Painter.find_by_style takes in style as an argument and finds a painter's full name by a style
+    * #find_gallery finds an gallery by neighborhood -- utilizing the Gallery.find_by_neighborhood class method
 
 ==============================================================
-  * MEMBERSHIP
-    * #initialize  a membership is initialized with a tier ("free", "premium", etc.), a member and an institution
-    * an membership has corresponding methods for all three attributes
-    * Membership.all returns all instances of the membership class
+  * PAINTING
+    * #initialize a painting is initialized with a title, a painter, and an gallery
+    * an painting has corresponding methods for all three attributes
+    * Painting.all returns all instances of the painting class
 
 ==============================================================
