@@ -35,9 +35,11 @@
     * #paintings returns an array of all the painting instances that belong_to a gallery
     * #painters return an array of all the painters that are associated with a gallery
     * #painter_names return an array of just the names of said painters (First and Last), not the full object
+    * #change_neighborhood takes in a gallery and a new neighborhood and changes the gallery's neighborhood
+
     ====== BONUS ======
     * Gallery.find_by_neighborhood takes in a neighborhood (e.g., "gym") as an argument and finds a gallery by a given neighborhood
-    * #change_neighborhood takes in a gallery and a new neighborhood and changes the gallery's neighborhood
+    * Gallery.most_paintings returns the name of the gallery (as a string) with the most paintings
 
 ==============================================================
   * PAINTER
@@ -49,8 +51,8 @@
     * #new_painting creates a new painting instance taking in an gallery and a title
     ====== BONUS ======
     * Painter.find_by_style takes in style as an argument and finds a painter's full name by a style
-    * #find_gallery finds an gallery by neighborhood -- utilizing the Gallery.find_by_neighborhood class method
-
+    * Painter.most_active returns the painter (as an object) with the most paintings
+    
 ==============================================================
   * PAINTING
     * #initialize a painting is initialized with a title, a painter, and an gallery
