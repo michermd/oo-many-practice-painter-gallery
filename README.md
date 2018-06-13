@@ -10,10 +10,10 @@
 # How is this modeled?
   * A painting belongs_to a painter
   * A painting belongs_to a gallery
-  * A member has_many memberships
-  * An institution has_many memberships
-  * A member has_many many institutions through memberships
-  * An institution has_many members through memberships
+  * A painter has_many paintings
+  * A gallery has_many paintings
+  * A painter has_many many galleries through paintings
+  * A gallery has_many painters through paintings
 
 ==============================================================
 
