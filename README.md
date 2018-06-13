@@ -53,6 +53,7 @@
     ====== BONUS ======
     * Painter.find_by_style takes in style as an argument and finds a painter's full name by a style
     * Painter.most_active returns the painter (as an object) with the most paintings
+    * #galleries goes through paintings to return a painter instance's (unique) galleries
     
 ==============================================================
   * PAINTING
