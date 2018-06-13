@@ -49,6 +49,7 @@
     * #painter_name converts a member's first_name,last_name, and style to bio sentence (e.g., "John Smith", "expressionist => "John Smith is an Expressionist.")
     * #paintings returns an array of all the paintings associated with an instance of painter
     * #new_painting creates a new painting instance taking in an gallery and a title
+    
     ====== BONUS ======
     * Painter.find_by_style takes in style as an argument and finds a painter's full name by a style
     * Painter.most_active returns the painter (as an object) with the most paintings
